@@ -1,0 +1,5 @@
+windows.h
+tkWinInt.h
+dllMain.c
+tkMain.c
+tkImgPhoto.c

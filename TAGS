@@ -1,0 +1,888 @@
+
+os2Main.c,95
+#define INCL_PM14,328
+main(58,1330
+Tcl_AppInit(106,2379
+WishPanic TCL_VARARGS_DEF(162,3595
+
+stubs.c,1535
+TkSetRegion(10,131
+_XInitImageFuncPtrs(21,260
+XSetWMClientMachine(31,343
+XStringListToTextProperty(39,464
+XChangeProperty(52,637
+XCreateGlyphCursor(65,876
+XCreateIC(79,1194
+XCreatePixmapCursor(85,1232
+XDeleteProperty(99,1500
+XDestroyIC(107,1603
+XFilterEvent(113,1640
+extern void XForceScreenSaver(120,1725
+XFreeCursor(127,1816
+XGContextFromGC(134,1900
+XGetAtomName(141,1957
+XGetGeometry(149,2048
+XGetImage(165,2436
+XGetWindowAttributes(180,2681
+XGetWMColormapWindows(189,2851
+XIconifyWindow(199,3026
+XListHosts(208,3161
+XLookupColor(217,3306
+XNextEvent(229,3548
+XPutBackEvent(236,3640
+XQueryColors(243,3721
+XQueryTree(252,3871
+XRefreshKeyboardMapping(265,4136
+XRootWindow(271,4213
+XSelectInput(279,4318
+XSendEvent(287,4421
+XSetCommand(298,4604
+XSetErrorHandler 307,4726
+XSetIconName(314,4807
+XSetTransientForHint(322,4918
+XSetWMColormapWindows(330,5033
+XSetWindowBackground(340,5197
+XSetWindowBackgroundPixmap(348,5330
+XSetWindowBorder(356,5464
+XSetWindowBorderPixmap(364,5585
+XSetWindowBorderWidth(372,5707
+XSetWindowColormap(380,5818
+XTranslateCoordinates(388,5928
+XWindowEvent(403,6220
+XWithdrawWindow(412,6363
+XmbLookupString(421,6488
+XGetWindowProperty(434,6741
+Tk_FreeXId(475,7678
+Tk_GetPixmap(485,7854
+Tk_FreePixmap(497,8057
+void XDrawPoints(505,8187
+XLowerWindow(522,8498
+XChangeGC(530,8615
+extern Window XCreateWindow(540,8769
+void XReparentWindow(561,9189
+Atom *XListProperties(571,9352
+Window XGetSelectionOwner(580,9493
+TkSelCvtToX(588,9595
+TkSelCvtFromX(604,10127
+
+tkImgPhoto.c,2143
+    typedef signed char schar;schar39,1033
+	typedef char schar;schar42,1099
+	typedef short schar;schar44,1129
+typedef unsigned int pixel;pixel54,1330
+#define MAX_PIXELS 61,1456
+} ColorTableId;ColorTableId84,2424
+typedef struct ColorTable ColorTable92,2630
+} ColorTable;ColorTable114,3575
+#define BLACK_AND_WHITE	129,4025
+#define COLOR_WINDOW	130,4052
+#define DISPOSE_PENDING	131,4076
+#define MAP_COLORS	132,4103
+typedef struct PhotoMaster PhotoMaster138,4201
+} PhotoMaster;PhotoMaster165,5555
+#define COLOR_IMAGE	175,5804
+#define IMAGE_CHANGED	176,5827
+typedef struct PhotoInstance PhotoInstance184,6011
+} PhotoInstance;PhotoInstance208,7277
+struct SubcommandOptions SubcommandOptions215,7397
+#define OPT_FORMAT	243,8723
+#define OPT_FROM	244,8744
+#define OPT_SHRINK	245,8763
+#define OPT_SUBSAMPLE	246,8784
+#define OPT_TO	247,8808
+#define OPT_ZOOM	248,8829
+#define DEF_PHOTO_GAMMA	297,10114
+#define DEF_PHOTO_HEIGHT	298,10143
+#define DEF_PHOTO_PALETTE	299,10172
+#define DEF_PHOTO_WIDTH	300,10201
+#define N_COLOR_HASH	338,11677
+#define MIN(MIN391,13863
+#define MAX(MAX393,13914
+Tk_CreatePhotoImageFormat(416,14515
+ImgPhotoCreate(452,15528
+ImgPhotoCmd(527,17795
+ParseSubcommandOptions(1047,33038
+ImgPhotoConfigureMaster(1271,39164
+ImgPhotoConfigureInstance(1447,44345
+ImgPhotoGet(1587,48533
+ImgPhotoDisplay(1788,54235
+ImgPhotoFree(1848,56277
+ImgPhotoDelete(1894,57491
+ImgPhotoCmdDeletedProc(1941,58843
+ImgPhotoSetSize(1972,59649
+ImgPhotoInstanceSetSize(2134,63874
+IsValidPalette(2268,67953
+CountBits(2355,69902
+GetColorTable(2390,70834
+FreeColorTable(2487,73459
+AllocateColors(2521,74328
+#   define CFRAC(CFRAC2532,74665
+#   define CGFRAC(CGFRAC2535,74758
+DisposeColorTable(2805,81789
+ReclaimColors(2853,83236
+DisposeInstance(2944,85667
+MatchFileFormat(3003,87499
+MatchStringFormat(3093,90098
+Tk_FindPhoto(3170,92280
+Tk_PhotoPutBlock(3202,93027
+Tk_PhotoPutZoomedBlock(3345,97097
+Dither(3528,102258
+DitherInstance(3606,104318
+Tk_PhotoBlank(3928,112698
+Tk_PhotoExpand(3991,114435
+Tk_PhotoGetSize(4032,115478
+Tk_PhotoSetSize(4065,116311
+Tk_PhotoGetImage(4103,117434
+
+tkMain.c,0
+
+tkOS2Clipboard.c,166
+TkSelGetSelection(38,925
+XSetSelectionOwner(108,2845
+TkOS2ClipboardRender(174,4517
+TkSelUpdateClipboard(236,5972
+TkSelEventProc(284,7124
+TkSelPropProc(319,7899
+
+tkOS2Color.c,323
+} SystemColorEntry;SystemColorEntry37,798
+SetSystemColors(121,3578
+InitColorTable(162,4445
+GetColorByName(221,5976
+GetColorByValue(280,7529
+XParseColor(343,8957
+XAllocColor(383,9885
+XAllocNamedColor(615,16478
+XFreeColors(653,17307
+XCreateColormap(730,19345
+XFreeColormap(789,20983
+TkOS2SelectPalette(831,22078
+
+tkOS2Cursor.c,226
+} TkOS2Cursor;TkOS2Cursor27,766
+static struct CursorName CursorName34,892
+#define TK_DEFAULT_CURSOR	132,4213
+TkGetCursorByName(152,4598
+TkCreateCursorFromData(234,6924
+TkFreeCursor(265,7792
+TkOS2UpdateCursor(290,8295
+
+tkOS2Dll.c,36
+unsigned long _DLL_InitTerm(39,765
+
+tkOS2Draw.c,814
+#define PI 18,439
+#define XAngleToRadians(XAngleToRadians19,467
+#define NOTSRCAND	71,2022
+#define NOTSRCINVERT	72,2088
+#define SRCORREVERSE	73,2157
+#define SRCNAND	74,2225
+#define MASKPAT	101,3039
+#define COPYFG	108,3264
+#define COPYBG	109,3327
+#define MIN(MIN116,3445
+#define MAX(MAX119,3497
+TkOS2GetDrawablePS(160,4832
+TkOS2ReleaseDrawablePS(217,6170
+ConvertPoints(268,7393
+XCopyArea(376,10417
+XCopyPlane(469,13444
+TkPutImage(783,23907
+XDrawString(1098,33393
+XFillRectangles(1663,52602
+if 1792,56233
+	    if 1830,57643
+RenderObject(1906,60048
+	if 2114,66158
+XDrawLines(2216,68975
+XFillPolygon(2263,69894
+XDrawRectangle(2309,70746
+XDrawArc(2382,72653
+XFillArc(2418,73313
+DrawOrFillArc(2455,74023
+TkScrollWindow(2611,79597
+TkOS2SetStipple(2663,81217
+TkOS2UnsetStipple(2725,83370
+
+tkOS2Font.c,314
+#define CP_LATIN1 30,791
+#define CP_1004 31,814
+#define CP_65400 32,838
+NameToFont(58,1488
+XNameToFont(218,5726
+XLoadFont(544,14267
+XQueryFont(1042,34605
+XLoadQueryFont(1270,41668
+XFreeFont(1300,42231
+XTextWidth(1339,43133
+XTextExtents(1416,45505
+XGetFontProperty(1502,48402
+TkOS2ScaleFont(1620,52976
+
+tkOS2GC.c,299
+XCreateGC(42,797
+XFreeGC(99,3211
+XSetForeground(126,3671
+XSetBackground(135,3818
+XSetFunction(144,3964
+XSetFillRule(153,4090
+XSetFillStyle(162,4220
+XSetTSOrigin(171,4355
+XSetArcMode(181,4494
+XSetStipple(190,4619
+XSetLineAttributes(199,4743
+XSetClipMask(214,5051
+XSetClipOrigin(223,5175
+
+tkOS2Image.c,56
+PutPixel(36,703
+imfree(86,1975
+XCreateImage(109,2379
+
+tkOS2ImgUtil.c,58
+TkAlignImageData(41,938
+TkOS2ReverseImageLines(105,2580
+
+tkOS2Init.c,99
+TkPlatformInit(100,3323
+TkOS2InitPM 184,5508
+    if 244,7945
+if 258,8355
+TkOS2ExitPM 306,9862
+
+tkOS2Key.c,206
+} Keys;Keys20,415
+XLookupString(98,2197
+XKeycodeToKeysym(146,3217
+XKeysymToKeycode(223,4765
+XGetModifierMapping(274,5686
+XFreeModifiermap(314,6714
+XStringToKeysym(339,7248
+XKeysymToString(362,7658
+
+tkOS2Mem.c,44
+TkOS2AllocMem 32,594
+TkOS2FreeMem 72,1310
+
+tkOS2Pixmap.c,102
+Tk_GetPixmap(35,724
+if 138,4046
+    if 145,4304
+    return 159,4721
+TkSetPixmapColormap(221,6031
+
+tkOS2Pointer.c,477
+#define MOUSE_TIMER_INTERVAL 20,401
+#define ALL_BUTTONS 27,564
+TkOS2PointerInit(87,2303
+TkOS2PointerDeadWindow(120,2997
+TkOS2PointerEvent(181,4546
+XGrabPointer(375,9941
+XUngrabPointer(425,11046
+XGrabKeyboard(460,11846
+XUngrabKeyboard(494,12526
+InitializeCrossingEvent(522,13026
+UpdateMousePosition(567,14594
+MouseTimerProc(720,18680
+TkGetPointerCoords(788,20137
+XQueryPointer(825,21026
+XGetInputFocus(862,21877
+XSetInputFocus(905,22782
+XDefineCursor(938,23529
+
+tkOS2Region.c,152
+TkCreateRegion(35,609
+TkDestroyRegion(66,1198
+TkClipBox(94,1710
+TkIntersectRegion(143,2909
+TkUnionRectWithRegion(173,3547
+TkRectInRegion(228,4996
+
+tkOS2Window.c,362
+TkMakeWindow(44,1115
+XDestroyWindow(158,4112
+XMapWindow(223,5597
+NotifyVisibility(301,7742
+XUnmapWindow(336,8617
+XMoveResizeWindow(381,9632
+XMoveWindow(419,10624
+XResizeWindow(460,11630
+XRaiseWindow(501,12783
+XConfigureWindow(540,13650
+XClearWindow(633,16110
+XChangeWindowAttributes(686,17402
+TkOS2WindowHeight(717,18063
+TkOS2WindowWidth(814,20479
+
+tkOS2Wm.c,1015
+ProtocolFree(92,2986
+TkOS2WmSetLimits(118,3527
+TkWmNewWindow(241,7634
+TkWmFreeCmd(335,10368
+TkWmMapWindow(375,11390
+#define ID_FRAME 544,16950
+TkWmUnmapWindow(782,24386
+TkWmDeadWindow(818,25192
+TkWmSetClass(929,28136
+Tk_WmCmd(954,28647
+Tk_SetGrid(2146,65650
+Tk_UnsetGrid(2241,68664
+TopLevelEventProc(2301,70145
+TopLevelReqProc(2354,71634
+UpdateGeometryInfo(2395,72756
+ParseGeometry(2531,76976
+Tk_GetRootCoords(2666,80298
+Tk_CoordsToWindow(2720,81717
+Tk_GetVRootGeometry(2775,83429
+Tk_MoveToplevelWindow(2817,84635
+TkWmProtocolEventProc(2876,86269
+TkWmRestackToplevel(2944,88220
+TkWmAddToColormapWindows(3020,90540
+TkWmRemoveFromColormapWindows(3120,93073
+TkOS2WmConfigure(3192,94847
+IconifyWindow(3371,100456
+DeiconifyWindow(3412,101489
+TkOS2WmInstallColormaps(3446,102277
+RefreshColormap(3534,104777
+InvalidateSubTree(3578,105968
+IdleMapToplevel(3630,107304
+static void UnmanageGeometry(3656,107896
+TkOS2GetSystemPalette(3689,108670
+GetMinSize(3718,109492
+GetMaxSize(3799,111874
+
+tkOS2X.c,432
+TkGetServerInfo(66,1801
+TkOS2GetTkModule(129,3561
+TkOS2GetAppInstance(165,4251
+TkOS2XInit(187,4596
+TkGetDefaultScreenName(252,6017
+XOpenDisplay(293,7011
+XBell(437,11159
+TkOS2FrameProc(446,11290
+TkOS2TopLevelProc(754,20064
+TkOS2ChildProc(1000,26985
+TranslateEvent(1174,31054
+	    if 1280,33774
+TkOS2GetModifierState(1537,40262
+GetTranslatedKey(1667,44409
+TkOS2GetDrawableFromHandle(1710,45404
+DeleteWindow(1740,46072
+
+default.h,24
+#define _DEFAULT18,467
+
+tkOS2Default.h,13377
+#define _TKOS2DEFAULT16,359
+#define BLACK	28,797
+#define WHITE	29,820
+#define NORMAL_BG	31,844
+#define ACTIVE_BG	32,881
+#define SELECT_BG	33,923
+#define SELECT_FG	34,959
+#define TROUGH	35,999
+#define INDICATOR	36,1033
+#define DISABLED	37,1061
+#define DEF_BUTTON_ANCHOR	43,1173
+#define DEF_BUTTON_ACTIVE_BG_COLOR	44,1209
+#define DEF_BUTTON_ACTIVE_BG_MONO	45,1254
+#define DEF_BUTTON_ACTIVE_FG_COLOR	46,1294
+#define DEF_BUTTON_ACTIVE_FG_MONO	47,1335
+#define DEF_BUTTON_BG_COLOR	48,1375
+#define DEF_BUTTON_BG_MONO	49,1414
+#define DEF_BUTTON_BITMAP	50,1448
+#define DEF_BUTTON_BORDER_WIDTH	51,1478
+#define DEF_BUTTON_CURSOR	52,1515
+#define DEF_BUTTON_COMMAND	53,1545
+#define DEF_BUTTON_DISABLED_FG_COLOR	54,1576
+#define DEF_BUTTON_DISABLED_FG_MONO	55,1622
+#define DEF_BUTTON_FG	56,1661
+#define DEF_BUTTON_FONT	57,1691
+#define DEF_BUTTON_HEIGHT	58,1769
+#define DEF_BUTTON_HIGHLIGHT_BG	59,1800
+#define DEF_BUTTON_HIGHLIGHT	60,1843
+#define DEF_LABEL_HIGHLIGHT_WIDTH	61,1879
+#define DEF_BUTTON_HIGHLIGHT_WIDTH	62,1917
+#define DEF_BUTTON_IMAGE	63,1956
+#define DEF_BUTTON_INDICATOR	64,1996
+#define DEF_BUTTON_JUSTIFY	65,2030
+#define DEF_BUTTON_OFF_VALUE	66,2067
+#define DEF_BUTTON_ON_VALUE	67,2101
+#define DEF_BUTTON_PADX	68,2134
+#define DEF_LABCHKRAD_PADX	69,2165
+#define DEF_BUTTON_PADY	70,2197
+#define DEF_LABCHKRAD_PADY	71,2228
+#define DEF_BUTTON_RELIEF	72,2260
+#define DEF_LABCHKRAD_RELIEF	73,2296
+#define DEF_BUTTON_SELECT_COLOR	74,2333
+#define DEF_BUTTON_SELECT_MONO	75,2376
+#define DEF_BUTTON_SELECT_IMAGE	76,2414
+#define DEF_BUTTON_STATE	77,2461
+#define DEF_LABEL_TAKE_FOCUS	78,2496
+#define DEF_BUTTON_TAKE_FOCUS	79,2530
+#define DEF_BUTTON_TEXT	80,2575
+#define DEF_BUTTON_TEXT_VARIABLE	81,2604
+#define DEF_BUTTON_UNDERLINE	82,2640
+#define DEF_BUTTON_VALUE	83,2675
+#define DEF_BUTTON_WIDTH	84,2704
+#define DEF_BUTTON_WRAP_LENGTH	85,2734
+#define DEF_RADIOBUTTON_VARIABLE	86,2770
+#define DEF_CHECKBUTTON_VARIABLE	87,2820
+#define DEF_CANVAS_BG_COLOR	93,2891
+#define DEF_CANVAS_BG_MONO	94,2930
+#define DEF_CANVAS_BORDER_WIDTH	95,2964
+#define DEF_CANVAS_CLOSE_ENOUGH	96,3001
+#define DEF_CANVAS_CONFINE	97,3038
+#define DEF_CANVAS_CURSOR	98,3070
+#define DEF_CANVAS_HEIGHT	99,3100
+#define DEF_CANVAS_HIGHLIGHT_BG	100,3132
+#define DEF_CANVAS_HIGHLIGHT	101,3175
+#define DEF_CANVAS_HIGHLIGHT_WIDTH	102,3211
+#define DEF_CANVAS_INSERT_BG	103,3250
+#define DEF_CANVAS_INSERT_BD_COLOR	104,3286
+#define DEF_CANVAS_INSERT_BD_MONO	105,3325
+#define DEF_CANVAS_INSERT_OFF_TIME	106,3363
+#define DEF_CANVAS_INSERT_ON_TIME	107,3404
+#define DEF_CANVAS_INSERT_WIDTH	108,3444
+#define DEF_CANVAS_RELIEF	109,3481
+#define DEF_CANVAS_SCROLL_REGION	110,3515
+#define DEF_CANVAS_SELECT_COLOR	111,3551
+#define DEF_CANVAS_SELECT_MONO	112,3594
+#define DEF_CANVAS_SELECT_BD_COLOR	113,3632
+#define DEF_CANVAS_SELECT_BD_MONO	114,3671
+#define DEF_CANVAS_SELECT_FG_COLOR	115,3709
+#define DEF_CANVAS_SELECT_FG_MONO	116,3750
+#define DEF_CANVAS_TAKE_FOCUS	117,3790
+#define DEF_CANVAS_WIDTH	118,3835
+#define DEF_CANVAS_X_SCROLL_CMD	119,3867
+#define DEF_CANVAS_X_SCROLL_INCREMENT	120,3903
+#define DEF_CANVAS_Y_SCROLL_CMD	121,3945
+#define DEF_CANVAS_Y_SCROLL_INCREMENT	122,3981
+#define DEF_ENTRY_BG_COLOR	128,4057
+#define DEF_ENTRY_BG_MONO	129,4095
+#define DEF_ENTRY_BORDER_WIDTH	130,4128
+#define DEF_ENTRY_CURSOR	131,4164
+#define DEF_ENTRY_EXPORT_SELECTION	132,4198
+#define DEF_ENTRY_FONT	133,4237
+#define DEF_ENTRY_FG	134,4316
+#define DEF_ENTRY_HIGHLIGHT_BG	135,4345
+#define DEF_ENTRY_HIGHLIGHT	136,4387
+#define DEF_ENTRY_HIGHLIGHT_WIDTH	137,4422
+#define DEF_ENTRY_INSERT_BG	138,4460
+#define DEF_ENTRY_INSERT_BD_COLOR	139,4495
+#define DEF_ENTRY_INSERT_BD_MONO	140,4533
+#define DEF_ENTRY_INSERT_OFF_TIME	141,4570
+#define DEF_ENTRY_INSERT_ON_TIME	142,4610
+#define DEF_ENTRY_INSERT_WIDTH	143,4649
+#define DEF_ENTRY_JUSTIFY	144,4685
+#define DEF_ENTRY_RELIEF	145,4719
+#define DEF_ENTRY_SCROLL_COMMAND	146,4754
+#define DEF_ENTRY_SELECT_COLOR	147,4790
+#define DEF_ENTRY_SELECT_MONO	148,4832
+#define DEF_ENTRY_SELECT_BD_COLOR	149,4869
+#define DEF_ENTRY_SELECT_BD_MONO	150,4907
+#define DEF_ENTRY_SELECT_FG_COLOR	151,4944
+#define DEF_ENTRY_SELECT_FG_MONO	152,4988
+#define DEF_ENTRY_SHOW	153,5027
+#define DEF_ENTRY_STATE	154,5066
+#define DEF_ENTRY_TAKE_FOCUS	155,5101
+#define DEF_ENTRY_TEXT_VARIABLE	156,5145
+#define DEF_ENTRY_WIDTH	157,5181
+#define DEF_FRAME_BG_COLOR	163,5245
+#define DEF_FRAME_BG_MONO	164,5283
+#define DEF_FRAME_BORDER_WIDTH	165,5316
+#define DEF_FRAME_CLASS	166,5352
+#define DEF_FRAME_COLORMAP	167,5386
+#define DEF_FRAME_CURSOR	168,5417
+#define DEF_FRAME_HEIGHT	169,5446
+#define DEF_FRAME_HIGHLIGHT_BG	170,5476
+#define DEF_FRAME_HIGHLIGHT	171,5518
+#define DEF_FRAME_HIGHLIGHT_WIDTH	172,5553
+#define DEF_FRAME_RELIEF	173,5591
+#define DEF_FRAME_TAKE_FOCUS	174,5624
+#define DEF_FRAME_VISUAL	175,5658
+#define DEF_FRAME_WIDTH	176,5687
+#define DEF_LISTBOX_BG_COLOR	182,5753
+#define DEF_LISTBOX_BG_MONO	183,5793
+#define DEF_LISTBOX_BORDER_WIDTH	184,5828
+#define DEF_LISTBOX_CURSOR	185,5865
+#define DEF_LISTBOX_EXPORT_SELECTION	186,5896
+#define DEF_LISTBOX_FONT	187,5937
+#define DEF_LISTBOX_FG	188,6015
+#define DEF_LISTBOX_HEIGHT	189,6046
+#define DEF_LISTBOX_HIGHLIGHT_BG	190,6079
+#define DEF_LISTBOX_HIGHLIGHT	191,6122
+#define DEF_LISTBOX_HIGHLIGHT_WIDTH	192,6159
+#define DEF_LISTBOX_RELIEF	193,6199
+#define DEF_LISTBOX_SCROLL_COMMAND	194,6236
+#define DEF_LISTBOX_SELECT_COLOR	195,6274
+#define DEF_LISTBOX_SELECT_MONO	196,6317
+#define DEF_LISTBOX_SELECT_BD	197,6356
+#define DEF_LISTBOX_SELECT_FG_COLOR	198,6391
+#define DEF_LISTBOX_SELECT_FG_MONO	199,6437
+#define DEF_LISTBOX_SELECT_MODE	200,6478
+#define DEF_LISTBOX_SET_GRID	201,6520
+#define DEF_LISTBOX_TAKE_FOCUS	202,6554
+#define DEF_LISTBOX_WIDTH	203,6600
+#define DEF_MENU_ENTRY_ACTIVE_BG	209,6686
+#define DEF_MENU_ENTRY_ACTIVE_FG	210,6733
+#define DEF_MENU_ENTRY_ACCELERATOR	211,6780
+#define DEF_MENU_ENTRY_BG	212,6829
+#define DEF_MENU_ENTRY_BITMAP	213,6870
+#define DEF_MENU_ENTRY_COMMAND	214,6906
+#define DEF_MENU_ENTRY_FG	215,6952
+#define DEF_MENU_ENTRY_FONT	216,6993
+#define DEF_MENU_ENTRY_IMAGE	217,7036
+#define DEF_MENU_ENTRY_INDICATOR	218,7080
+#define DEF_MENU_ENTRY_LABEL	219,7117
+#define DEF_MENU_ENTRY_MENU	220,7161
+#define DEF_MENU_ENTRY_OFF_VALUE	221,7204
+#define DEF_MENU_ENTRY_ON_VALUE	222,7241
+#define DEF_MENU_ENTRY_SELECT_IMAGE	223,7278
+#define DEF_MENU_ENTRY_STATE	224,7328
+#define DEF_MENU_ENTRY_VALUE	225,7367
+#define DEF_MENU_ENTRY_CHECK_VARIABLE	226,7411
+#define DEF_MENU_ENTRY_RADIO_VARIABLE	227,7463
+#define DEF_MENU_ENTRY_SELECT	228,7518
+#define DEF_MENU_ENTRY_UNDERLINE	229,7562
+#define DEF_MENU_ACTIVE_BG_COLOR	235,7640
+#define DEF_MENU_ACTIVE_BG_MONO	236,7683
+#define DEF_MENU_ACTIVE_BORDER_WIDTH	237,7722
+#define DEF_MENU_ACTIVE_FG_COLOR	238,7763
+#define DEF_MENU_ACTIVE_FG_MONO	239,7802
+#define DEF_MENU_BG_COLOR	240,7841
+#define DEF_MENU_BG_MONO	241,7878
+#define DEF_MENU_BORDER_WIDTH	242,7910
+#define DEF_MENU_CURSOR	243,7945
+#define DEF_MENU_DISABLED_FG_COLOR	244,7979
+#define DEF_MENU_DISABLED_FG_MONO	245,8023
+#define DEF_MENU_FONT	249,8142
+#define DEF_MENU_FG	250,8201
+#define DEF_MENU_POST_COMMAND	251,8229
+#define DEF_MENU_RELIEF	252,8263
+#define DEF_MENU_SELECT_COLOR	253,8298
+#define DEF_MENU_SELECT_MONO	254,8339
+#define DEF_MENU_TAKE_FOCUS	255,8375
+#define DEF_MENU_TEAROFF	256,8408
+#define DEF_MENU_TEAROFF_CMD	257,8438
+#define DEF_MENU_TRANSIENT	258,8482
+#define DEF_MENUBUTTON_ANCHOR	264,8552
+#define DEF_MENUBUTTON_ACTIVE_BG_COLOR	265,8592
+#define DEF_MENUBUTTON_ACTIVE_BG_MONO	266,8641
+#define DEF_MENUBUTTON_ACTIVE_FG_COLOR	267,8685
+#define DEF_MENUBUTTON_ACTIVE_FG_MONO	268,8730
+#define DEF_MENUBUTTON_BG_COLOR	269,8774
+#define DEF_MENUBUTTON_BG_MONO	270,8817
+#define DEF_MENUBUTTON_BITMAP	271,8855
+#define DEF_MENUBUTTON_BORDER_WIDTH	272,8889
+#define DEF_MENUBUTTON_CURSOR	273,8929
+#define DEF_MENUBUTTON_DISABLED_FG_COLOR 274,8963
+#define DEF_MENUBUTTON_DISABLED_FG_MONO	275,9013
+#define DEF_MENUBUTTON_FONT	279,9143
+#define DEF_MENUBUTTON_FG	280,9207
+#define DEF_MENUBUTTON_HEIGHT	281,9240
+#define DEF_MENUBUTTON_HIGHLIGHT_BG	282,9275
+#define DEF_MENUBUTTON_HIGHLIGHT	283,9321
+#define DEF_MENUBUTTON_HIGHLIGHT_WIDTH	284,9360
+#define DEF_MENUBUTTON_IMAGE	285,9403
+#define DEF_MENUBUTTON_INDICATOR	286,9447
+#define DEF_MENUBUTTON_JUSTIFY	287,9484
+#define DEF_MENUBUTTON_MENU	288,9525
+#define DEF_MENUBUTTON_PADX	289,9557
+#define DEF_MENUBUTTON_PADY	290,9591
+#define DEF_MENUBUTTON_RELIEF	291,9625
+#define DEF_MENUBUTTON_STATE	292,9663
+#define DEF_MENUBUTTON_TAKE_FOCUS	293,9702
+#define DEF_MENUBUTTON_TEXT	294,9740
+#define DEF_MENUBUTTON_TEXT_VARIABLE	295,9772
+#define DEF_MENUBUTTON_UNDERLINE	296,9812
+#define DEF_MENUBUTTON_WIDTH	297,9850
+#define DEF_MENUBUTTON_WRAP_LENGTH	298,9884
+#define DEF_MESSAGE_ANCHOR	304,9958
+#define DEF_MESSAGE_ASPECT	305,9995
+#define DEF_MESSAGE_BG_COLOR	306,10029
+#define DEF_MESSAGE_BG_MONO	307,10069
+#define DEF_MESSAGE_BORDER_WIDTH	308,10104
+#define DEF_MESSAGE_CURSOR	309,10141
+#define DEF_MESSAGE_FG	310,10172
+#define DEF_MESSAGE_FONT	311,10203
+#define DEF_MESSAGE_HIGHLIGHT_BG	312,10281
+#define DEF_MESSAGE_HIGHLIGHT	313,10324
+#define DEF_MESSAGE_HIGHLIGHT_WIDTH	314,10361
+#define DEF_MESSAGE_JUSTIFY	315,10401
+#define DEF_MESSAGE_PADX	316,10437
+#define DEF_MESSAGE_PADY	317,10468
+#define DEF_MESSAGE_RELIEF	318,10499
+#define DEF_MESSAGE_TAKE_FOCUS	319,10534
+#define DEF_MESSAGE_TEXT	320,10570
+#define DEF_MESSAGE_TEXT_VARIABLE	321,10599
+#define DEF_MESSAGE_WIDTH	322,10636
+#define DEF_SCALE_ACTIVE_BG_COLOR	328,10700
+#define DEF_SCALE_ACTIVE_BG_MONO	329,10744
+#define DEF_SCALE_BG_COLOR	330,10783
+#define DEF_SCALE_BG_MONO	331,10821
+#define DEF_SCALE_BIG_INCREMENT	332,10854
+#define DEF_SCALE_BORDER_WIDTH	333,10891
+#define DEF_SCALE_COMMAND	334,10927
+#define DEF_SCALE_CURSOR	335,10957
+#define DEF_SCALE_DIGITS	336,10986
+#define DEF_SCALE_FONT	337,11016
+#define DEF_SCALE_FG_COLOR	338,11093
+#define DEF_SCALE_FG_MONO	339,11127
+#define DEF_SCALE_FROM	340,11160
+#define DEF_SCALE_HIGHLIGHT_BG	341,11189
+#define DEF_SCALE_HIGHLIGHT	342,11231
+#define DEF_SCALE_HIGHLIGHT_WIDTH	343,11266
+#define DEF_SCALE_LABEL	344,11304
+#define DEF_SCALE_LENGTH	345,11333
+#define DEF_SCALE_ORIENT	346,11365
+#define DEF_SCALE_RELIEF	347,11402
+#define DEF_SCALE_REPEAT_DELAY	348,11435
+#define DEF_SCALE_REPEAT_INTERVAL	349,11472
+#define DEF_SCALE_RESOLUTION	350,11512
+#define DEF_SCALE_TROUGH_COLOR	351,11546
+#define DEF_SCALE_TROUGH_MONO	352,11585
+#define DEF_SCALE_SHOW_VALUE	353,11622
+#define DEF_SCALE_SLIDER_LENGTH	354,11656
+#define DEF_SCALE_SLIDER_RELIEF	355,11694
+#define DEF_SCALE_STATE	356,11736
+#define DEF_SCALE_TAKE_FOCUS	357,11771
+#define DEF_SCALE_TICK_INTERVAL	358,11815
+#define DEF_SCALE_TO	359,11852
+#define DEF_SCALE_VARIABLE	360,11881
+#define DEF_SCALE_WIDTH	361,11912
+#define DEF_SCROLLBAR_ACTIVE_BG_COLOR	367,11980
+#define DEF_SCROLLBAR_ACTIVE_BG_MONO	368,12028
+#define DEF_SCROLLBAR_ACTIVE_RELIEF	369,12071
+#define DEF_SCROLLBAR_BG_COLOR	370,12116
+#define DEF_SCROLLBAR_BG_MONO	371,12158
+#define DEF_SCROLLBAR_BORDER_WIDTH	372,12195
+#define DEF_SCROLLBAR_COMMAND	373,12234
+#define DEF_SCROLLBAR_CURSOR	374,12268
+#define DEF_SCROLLBAR_EL_BORDER_WIDTH	375,12301
+#define DEF_SCROLLBAR_HIGHLIGHT_BG	376,12344
+#define DEF_SCROLLBAR_HIGHLIGHT	377,12389
+#define DEF_SCROLLBAR_HIGHLIGHT_WIDTH	378,12428
+#define DEF_SCROLLBAR_JUMP	379,12470
+#define DEF_SCROLLBAR_ORIENT	380,12502
+#define DEF_SCROLLBAR_RELIEF	381,12543
+#define DEF_SCROLLBAR_REPEAT_DELAY	382,12582
+#define DEF_SCROLLBAR_REPEAT_INTERVAL	383,12623
+#define DEF_SCROLLBAR_TAKE_FOCUS	384,12667
+#define DEF_SCROLLBAR_TROUGH_COLOR	385,12714
+#define DEF_SCROLLBAR_TROUGH_MONO	386,12756
+#define DEF_SCROLLBAR_WIDTH	387,12796
+#define DEF_TEXT_BG_COLOR	393,12862
+#define DEF_TEXT_BG_MONO	394,12899
+#define DEF_TEXT_BORDER_WIDTH	395,12931
+#define DEF_TEXT_CURSOR	396,12966
+#define DEF_TEXT_FG	397,13000
+#define DEF_TEXT_EXPORT_SELECTION	398,13028
+#define DEF_TEXT_FONT	399,13066
+#define DEF_TEXT_HEIGHT	400,13138
+#define DEF_TEXT_HIGHLIGHT_BG	401,13169
+#define DEF_TEXT_HIGHLIGHT	402,13210
+#define DEF_TEXT_HIGHLIGHT_WIDTH	403,13244
+#define DEF_TEXT_INSERT_BG	404,13281
+#define DEF_TEXT_INSERT_BD_COLOR	405,13315
+#define DEF_TEXT_INSERT_BD_MONO	406,13352
+#define DEF_TEXT_INSERT_OFF_TIME	407,13389
+#define DEF_TEXT_INSERT_ON_TIME	408,13428
+#define DEF_TEXT_INSERT_WIDTH	409,13467
+#define DEF_TEXT_PADX	410,13502
+#define DEF_TEXT_PADY	411,13530
+#define DEF_TEXT_RELIEF	412,13558
+#define DEF_TEXT_SELECT_COLOR	413,13593
+#define DEF_TEXT_SELECT_MONO	414,13634
+#define DEF_TEXT_SELECT_BD_COLOR	415,13670
+#define DEF_TEXT_SELECT_BD_MONO	416,13707
+#define DEF_TEXT_SELECT_FG_COLOR	417,13744
+#define DEF_TEXT_SELECT_FG_MONO	418,13787
+#define DEF_TEXT_SET_GRID	419,13826
+#define DEF_TEXT_SPACING1	420,13857
+#define DEF_TEXT_SPACING2	421,13888
+#define DEF_TEXT_SPACING3	422,13919
+#define DEF_TEXT_STATE	423,13950
+#define DEF_TEXT_TABS	424,13984
+#define DEF_TEXT_TAKE_FOCUS	425,14011
+#define DEF_TEXT_WIDTH	426,14054
+#define DEF_TEXT_WRAP	427,14084
+#define DEF_TEXT_XSCROLL_COMMAND	428,14115
+#define DEF_TEXT_YSCROLL_COMMAND	429,14151
+#define DEF_TOPLEVEL_CLASS	436,14284
+#define DEF_TOPLEVEL_SCREEN	437,14323
+
+tkOS2Int.h,2232
+#define _OS2INT15,338
+#define INCL_BASE21,397
+#define INCL_PM22,415
+#define OS228,493
+#    define WORD 32,570
+#    define TkWinDrawable 33,602
+#    define TWD_BITMAP	34,642
+#    define DeleteObject	35,676
+typedef struct ProtocolHandler ProtocolHandler45,955
+} ProtocolHandler;ProtocolHandler54,1368
+#define HANDLER_SIZE(HANDLER_SIZE56,1388
+typedef struct TkWmInfo TkWmInfo66,1673
+} WmInfo;WmInfo184,6811
+#define WM_NEVER_MAPPED	217,8176
+#define WM_UPDATE_PENDING	218,8209
+#define WM_NEGATIVE_X	219,8243
+#define WM_NEGATIVE_Y	220,8274
+#define WM_UPDATE_SIZE_HINTS	221,8305
+#define WM_SYNC_PENDING	222,8342
+#define WM_CREATE_PENDING	223,8375
+#define WM_MOVE_PENDING	224,8409
+#define WM_COLORMAPS_EXPLICIT	225,8442
+#define WM_ADDED_TOPLEVEL_COLORMAP	226,8480
+#define WM_WIDTH_NOT_RESIZABLE	227,8522
+#define WM_HEIGHT_NOT_RESIZABLE	228,8562
+#define WM_TOPLEVEL_STYLE 234,8668
+#define WM_OVERRIDE_STYLE 235,8728
+#define WM_TRANSIENT_STYLE 236,8788
+#define EX_TOPLEVEL_STYLE 238,8926
+#define EX_OVERRIDE_STYLE 239,9034
+#define EX_TRANSIENT_STYLE 240,9089
+typedef struct TkOS2PSState TkOS2PSState250,9253
+} TkOS2PSState;TkOS2PSState253,9321
+#define TOD_BITMAP	262,9511
+#define TOD_WINDOW	263,9532
+#define TOD_WM_WINDOW	264,9553
+#define TOC_TOPLEVEL	267,9606
+#define TOC_CHILD	268,9640
+#define CW_USEDEFAULT	270,9669
+#define TOP_POLYGONS	273,9735
+#define TOP_POLYLINE	274,9758
+#define MAX_LID	277,9810
+#define MAX(MAX279,9831
+#define MIN(MIN280,9874
+} TkOS2Window;TkOS2Window286,9988
+} TkOS2Bitmap;TkOS2Bitmap296,10135
+} TkOS2Drawable;TkOS2Drawable302,10233
+#define TkOS2GetHWND(TkOS2GetHWND307,10336
+#define TkOS2GetWinPtr(TkOS2GetWinPtr308,10399
+#define TkOS2GetHBITMAP(TkOS2GetHBITMAP309,10462
+#define TkOS2GetColormap(TkOS2GetColormap310,10526
+#define RGB(RGB315,10670
+#define RGBFlag(RGBFlag316,10743
+#define GetFlag(GetFlag317,10835
+#define GetRValue(GetRValue318,10878
+#define GetGValue(GetGValue319,10934
+#define GetBValue(GetBValue320,10989
+} TkOS2Colormap;TkOS2Colormap335,11540
+} TkOS2Font;TkOS2Font349,12079
+} TkOS2TrackSize;TkOS2TrackSize359,12269
+} TkOS2WINDOWPOS;TkOS2WINDOWPOS364,12387
+#define TkOS2GetPalette(TkOS2GetPalette370,12479
+
+tkOS2Port.h,1024
+#define _OS2PORT17,461
+#define strncasecmp 40,877
+#define NBBY 42,907
+#define OPEN_MAX 44,923
+#define REDO_KEYSYM_LOOKUP50,1024
+#define TkGetNativeProlog(TkGetNativeProlog53,1071
+#define TkFreeWindowId(TkFreeWindowId54,1125
+#define TkInitXId(TkInitXId55,1159
+#    define TK_READ_DATA_PENDING(TK_READ_DATA_PENDING63,1315
+#    define TK_READ_DATA_PENDING(TK_READ_DATA_PENDING65,1388
+#    define TK_READ_DATA_PENDING(TK_READ_DATA_PENDING67,1456
+#define XFlush(XFlush75,1630
+#define XFree(XFree76,1654
+#define XGrabServer(XGrabServer77,1721
+#define XNoOp(XNoOp78,1750
+#define XUngrabServer(XUngrabServer79,1795
+#define XSynchronize(XSynchronize80,1826
+#define XSync(XSync81,1884
+#define XVisualIDFromVisual(XVisualIDFromVisual82,1935
+#define XPutImage(XPutImage84,1991
+#define XDefaultVisual(XDefaultVisual86,2113
+#define XDefaultScreen(XDefaultScreen87,2177
+#define XDefaultColormap(XDefaultColormap88,2230
+#define XDefaultDepth(XDefaultDepth89,2289
+struct timezone timezone96,2413
+
+tkPort.h,60
+#define _TKPORT18,462
+#             define MAC_TCL 36,790
+
+TkResIDs.h,2060
+#define Tk 1,0
+#define X_cursor 2,56
+#define arrow 3,112
+#define based_arrow_down 4,168
+#define based_arrow_up 5,224
+#define boat 6,280
+#define bogosity 7,336
+#define bottom_left_corner 8,392
+#define bottom_right_corner 9,448
+#define bottom_side 10,504
+#define bottom_tee 11,560
+#define box_spiral 12,616
+#define center_ptr 13,672
+#define circle 14,728
+#define clock 15,784
+#define coffee_mug 16,840
+#define cross 17,896
+#define cross_reverse 18,952
+#define crosshair 19,1008
+#define diamond_cross 20,1064
+#define dot 21,1120
+#define dotbox 22,1176
+#define double_arrow 23,1232
+#define draft_large 24,1288
+#define draft_small 25,1344
+#define draped_box 26,1400
+#define exchange 27,1456
+#define fleur 28,1512
+#define gobbler 29,1568
+#define gumby 30,1624
+#define hand1 31,1680
+#define hand2 32,1736
+#define heart 33,1792
+#define xicon 34,1848
+#define iron_cross 35,1904
+#define left_ptr 36,1960
+#define left_side 37,2016
+#define left_tee 38,2072
+#define leftbutton 39,2128
+#define ll_angle 40,2184
+#define lr_angle 41,2240
+#define man 42,2296
+#define middlebutton 43,2352
+#define mouse 44,2408
+#define pencil 45,2464
+#define pirate 46,2520
+#define plus 47,2576
+#define question_arrow 48,2632
+#define right_ptr 49,2688
+#define right_side 50,2744
+#define right_tee 51,2800
+#define rightbutton 52,2856
+#define rtl_logo 53,2912
+#define sailboat 54,2968
+#define sb_down_arrow 55,3024
+#define sb_h_double_arrow 56,3080
+#define sb_left_arrow 57,3136
+#define sb_right_arrow 58,3192
+#define sb_up_arrow 59,3248
+#define sb_v_double_arrow 60,3304
+#define shuttle 61,3360
+#define sizing 62,3416
+#define spider 63,3472
+#define spraycan 64,3528
+#define star 65,3584
+#define target 66,3640
+#define tcross 67,3696
+#define top_left_arrow 68,3752
+#define top_left_corner 69,3808
+#define top_right_corner 70,3864
+#define top_side 71,3920
+#define top_tee 72,3976
+#define trek 73,4032
+#define ul_angle 74,4088
+#define umbrella 75,4144
+#define ur_angle 76,4200
+#define watch 77,4256
+#define xterm 78,4312
